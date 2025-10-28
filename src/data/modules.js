@@ -1,0 +1,868 @@
+const Modules = [
+  {
+    html: [
+      {
+        title: "Dominate HTML5",
+        img: "/html.png",
+      },
+      {
+        id: 1,
+        moduteTitle: "Getting Started with HTML",
+        topics: [
+          "What is HTML & how it powers the web",
+          "Setting up your coding environment (VS Code + Live Server)",
+          "HTML document structure",
+          "Tags, elements & attributes",
+          "Comments, whitespace & indentation",
+        ],
+        project: "Build your first “Hello World” webpage",
+      },
+      {
+        id: 2,
+        moduteTitle: "Text, Links & Media",
+        topics: [
+          "Headings, paragraphs & text formatting",
+          "Lists: ordered, unordered & nested",
+          "Links: absolute vs relative paths",
+          "Images and alt text",
+          "Embedding videos, audio, and iframes",
+        ],
+        project: "Personal Bio Page with images and navigation links",
+      },
+      {
+        id: 3,
+        moduteTitle: "Semantic HTML & Page Structure",
+        topics: [
+          "What is semantic HTML?",
+          "Using header, nav, main, section, article, footer",
+          "Divs vs semantic tags",
+          "Metadata & the head tag",
+          "Accessibility basics",
+        ],
+        project: "Simple Blog Layout",
+      },
+      {
+        id: 4,
+        moduteTitle: "Forms & User Input",
+        topics: [
+          "The form tag and attributes",
+          "Input types: text, email, password, number, date",
+          "Labels, placeholders, and required fields",
+          "Checkboxes, radio buttons, and dropdowns",
+          "Buttons and form submission",
+        ],
+        project: "Contact Form",
+      },
+      {
+        id: 5,
+        moduteTitle: "Tables & Data Presentation",
+        topics: [
+          "Table structure: tr, th, td",
+          "Thead, tbody, tfoot",
+          "Merging cells with rowspan & colspan",
+          "Caption and accessibility",
+        ],
+        project: "Pricing Table or Class Schedule",
+      },
+      {
+        id: 6,
+        moduteTitle: "Advanced HTML Features",
+        topics: [
+          "Inline vs block elements",
+          "Iframes, embeds, and scripts",
+          "HTML entities & special characters",
+          "Custom data-* attributes",
+          "SEO tags and validation",
+        ],
+        project: "Personal Portfolio Website",
+      },
+      {
+        id: 7,
+        moduteTitle: "Real-World HTML Projects",
+        topics: [
+          "Portfolio Website",
+          "Blog Home Page",
+          "Product Landing Page",
+          "Resume Page",
+          "Contact Form Page",
+        ],
+        //project:null,
+      },
+    ],
+  },
+
+  {
+    css: [
+      {
+        title: "Dominate CSS3",
+        img: "/css.png",
+      },
+      {
+        id: 1,
+        moduteTitle: "Getting Started with CSS",
+        topics: [
+          "What is CSS and how it enhances HTML",
+          "CSS syntax: selectors, properties, and values",
+          "Inline, internal, and external CSS — when to use each",
+          "Linking external stylesheets with <link>",
+          "Understanding the cascade and inheritance",
+          "How browsers read CSS (the rendering flow)",
+          "Basic structure of a style rule",
+          "Color systems: HEX, RGB, RGBA, and HSL",
+          "Using comments and organizing code for readability",
+        ],
+        project:
+          "Style your first 'Hello World' page — add colors, backgrounds, and simple text styles",
+      },
+      {
+        id: 2,
+        moduteTitle: "Selectors, Specificity & Combinators",
+        topics: [
+          "Universal, element, class, and ID selectors",
+          "Grouping selectors and combining rules",
+          "Descendant, child, and sibling combinators",
+          "Pseudo-classes (like :hover, :focus, :nth-child)",
+          "Pseudo-elements (::before, ::after)",
+          "Specificity calculation (inline, ID, class, type)",
+          "The !important rule — when and why to avoid it",
+          "Attribute selectors and pattern matching",
+        ],
+        project:
+          "Build a product card section with hover and focus effects using advanced selectors",
+      },
+      {
+        id: 3,
+        moduteTitle: "Box Model & Visual Formatting",
+        topics: [
+          "Content, padding, border, and margin",
+          "box-sizing: content-box vs border-box",
+          "Width, height, min/max values",
+          "Inline vs block-level elements",
+          "Overflow handling: visible, hidden, scroll, auto",
+          "Border radius, box-shadow, and outline",
+          "Background images, gradients, and layering",
+          "Resetting and normalizing CSS defaults",
+        ],
+        project:
+          "Design a clean profile card using box model properties and shadows",
+      },
+      {
+        id: 4,
+        moduteTitle: "Positioning & Display",
+        topics: [
+          "The display property (block, inline, inline-block, none)",
+          "Position values: static, relative, absolute, fixed, sticky",
+          "Z-index and stacking context",
+          "Centering elements vertically and horizontally",
+          "Using position for tooltips, popups, and overlays",
+          "Float and clear (legacy layout techniques)",
+          "Modern use cases of position: sticky navigation",
+        ],
+        project: "Create a sticky header and floating action button layout",
+      },
+      {
+        id: 5,
+        moduteTitle: "Flexbox — Modern Layout System",
+        topics: [
+          "What is Flexbox and why it replaces float-based layouts",
+          "Main axis vs cross axis",
+          "Flex container properties: display, flex-direction, flex-wrap, justify-content, align-items, align-content",
+          "Flex item properties: flex-grow, flex-shrink, flex-basis, align-self, order",
+          "Common patterns: navbars, cards, equal-height layouts",
+          "Responsive alignment with Flexbox",
+        ],
+        project:
+          "Build a responsive navigation bar and pricing cards using Flexbox",
+      },
+      {
+        id: 6,
+        moduteTitle: "Grid — Two-Dimensional Layouts",
+        topics: [
+          "CSS Grid fundamentals",
+          "Grid container vs grid items",
+          "Creating rows and columns with grid-template",
+          "Grid gaps and alignment",
+          "Grid areas and naming zones",
+          "auto-fit, auto-fill, and repeat() for responsive layouts",
+          "Combining Grid and Flexbox for hybrid designs",
+        ],
+        project: "Design a multi-section portfolio layout using CSS Grid",
+      },
+      {
+        id: 7,
+        moduteTitle: "Typography & Visual Hierarchy",
+        topics: [
+          "Font families, fallbacks, and Google Fonts",
+          "Font size units: px, em, rem",
+          "Font weight, style, and variant",
+          "Line height and letter spacing",
+          "Text alignment, decoration, and transform",
+          "Color contrast and accessibility",
+          "Using variables for consistent font scales",
+        ],
+        project: "Design a blog article layout with beautiful typography",
+      },
+      {
+        id: 8,
+        moduteTitle: "Transitions, Transforms & Animations",
+        topics: [
+          "Using transitions for hover effects",
+          "Timing functions: ease, ease-in-out, cubic-bezier",
+          "Transform properties: translate, rotate, scale, skew",
+          "@keyframes animations — syntax and usage",
+          "Animation duration, delay, and iteration",
+          "Combining transforms and keyframes for complex effects",
+          "Performance considerations for animations",
+        ],
+        project:
+          "Create an interactive hero banner with smooth text animations",
+      },
+      {
+        id: 9,
+        moduteTitle: "Responsive Design & Media Queries",
+        topics: [
+          "Mobile-first vs desktop-first design strategy",
+          "Viewports, breakpoints, and responsive units (%, vw, vh, rem)",
+          "Using media queries for adaptive layouts",
+          "Responsive images and typography scaling",
+          "Using CSS Grid/Flexbox for fluid layouts",
+          "Testing responsiveness with browser dev tools",
+        ],
+        project: "Build a 3-section landing page that adapts across devices",
+      },
+      {
+        id: 10,
+        moduteTitle: "Advanced & Modern CSS Features",
+        topics: [
+          "CSS Variables (custom properties)",
+          "calc() and clamp() for dynamic sizing",
+          "Pseudo-classes for accessibility (:focus-visible, :has)",
+          "Dark mode with prefers-color-scheme",
+          "Using clamp() for fluid typography",
+          "Layering styles with @layer and the cascade",
+          "CSS nesting (future syntax)",
+        ],
+        project: "Implement a light/dark themed website using CSS variables",
+      },
+      {
+        id: 11,
+        moduteTitle: "Best Practices & Maintenance",
+        topics: [
+          "Organizing large CSS files (BEM naming convention)",
+          "Avoiding specificity wars",
+          "Reusable utility classes",
+          "Using resets and normalizers correctly",
+          "Working with design systems and component libraries",
+          "Performance optimization — minimizing CSS bloat",
+          "CSS validation and debugging",
+        ],
+        project:
+          "Refactor and optimize an existing CSS codebase for maintainability",
+      },
+    ],
+  },
+
+  {
+    javascript: [
+      {
+        title: "Dominate JavaScript",
+        img: "/javascript.png",
+      },
+      {
+        id: 1,
+        moduteTitle: "Getting Started with JavaScript",
+        topics: [
+          "What is JavaScript and how it powers the web",
+          "Embedding JavaScript in HTML (inline, internal, external)",
+          "The role of browsers and the JS engine",
+          "Console and debugging basics",
+          "Syntax overview: statements, semicolons, indentation",
+          "Comments and writing clean code",
+          "Understanding the `<script>` tag and placement (head vs body)",
+          "How JS interacts with HTML and CSS",
+        ],
+        project:
+          "Write your first script that displays a greeting message dynamically",
+      },
+      {
+        id: 2,
+        moduteTitle: "Variables, Data Types & Operators",
+        topics: [
+          "Declaring variables with var, let, and const",
+          "Primitive data types: string, number, boolean, null, undefined, symbol",
+          "Type conversion and coercion",
+          "Arithmetic, comparison, and logical operators",
+          "String concatenation and template literals",
+          "Understanding dynamic typing in JS",
+          "Common pitfalls (NaN, undefined, null)",
+          "The typeof operator and data validation",
+        ],
+        project:
+          "Build a small script that takes user input and displays formatted information",
+      },
+      {
+        id: 3,
+        moduteTitle: "Control Flow & Loops",
+        topics: [
+          "Conditional statements: if, else if, else",
+          "Switch statements and when to use them",
+          "For, while, and do...while loops",
+          "Break and continue keywords",
+          "Nested loops and iteration patterns",
+          "Practical looping examples (counting, pattern generation)",
+          "Short-circuit evaluation and ternary operators",
+        ],
+        project:
+          "Create a simple grade calculator using conditional logic and loops",
+      },
+      {
+        id: 4,
+        moduteTitle: "Functions & Scope",
+        topics: [
+          "Defining and calling functions",
+          "Parameters, arguments, and default values",
+          "Return statements and pure functions",
+          "Arrow functions and implicit return",
+          "Function expressions vs declarations",
+          "Understanding local and global scope",
+          "Block scope with let and const",
+          "Closures and lexical environment (intro)",
+        ],
+        project:
+          "Create a reusable temperature converter (Celsius ↔ Fahrenheit)",
+      },
+      {
+        id: 5,
+        moduteTitle: "Arrays & Iteration Methods",
+        topics: [
+          "Creating and accessing arrays",
+          "Array methods: push, pop, shift, unshift",
+          "Looping through arrays with for and for...of",
+          "map(), filter(), reduce(), and forEach() explained",
+          "Searching with find() and includes()",
+          "Sorting and reversing arrays",
+          "Multidimensional arrays and nested loops",
+        ],
+        project:
+          "Build a shopping cart array that adds, removes, and totals items",
+      },
+      {
+        id: 6,
+        moduteTitle: "Objects & the Data Model",
+        topics: [
+          "Creating and accessing object properties",
+          "Dot vs bracket notation",
+          "Adding, modifying, and deleting properties",
+          "Nested objects and arrays of objects",
+          "Object destructuring and shorthand syntax",
+          "The 'this' keyword and context",
+          "Object methods and computed properties",
+          "JSON: stringify() and parse()",
+        ],
+        project: "Build a student record system using objects and arrays",
+      },
+      {
+        id: 7,
+        moduteTitle: "DOM Manipulation & Events",
+        topics: [
+          "Understanding the Document Object Model (DOM)",
+          "Selecting elements: getElementById, querySelector, etc.",
+          "Changing content and attributes dynamically",
+          "Creating, appending, and removing elements",
+          "Event listeners: click, input, submit, keyup",
+          "Event bubbling and delegation",
+          "Practical UI interactions with DOM",
+          "Debugging DOM errors",
+        ],
+        project: "Build an interactive to-do list that adds and deletes tasks",
+      },
+      {
+        id: 8,
+        moduteTitle: "Advanced DOM Techniques",
+        topics: [
+          "Manipulating classes with classList",
+          "Working with styles dynamically",
+          "Using dataset attributes for custom data",
+          "Dynamic forms and user input validation",
+          "Real-time UI updates with events",
+          "Timers and intervals (setTimeout, setInterval)",
+          "LocalStorage and sessionStorage for persistence",
+        ],
+        project: "Create a notes app that saves data to local storage",
+      },
+      {
+        id: 9,
+        moduteTitle: "Error Handling & Debugging",
+        topics: [
+          "Common types of errors in JavaScript",
+          "try...catch...finally structure",
+          "Throwing custom errors",
+          "Using console methods for debugging",
+          "Handling form validation errors gracefully",
+          "Understanding call stack and error tracing",
+          "Practical debugging workflow in VS Code",
+        ],
+        project:
+          "Create a simple login form that validates input and handles errors",
+      },
+      {
+        id: 10,
+        moduteTitle: "ES6+ and Modern JavaScript",
+        topics: [
+          "Let and const recap (block scope)",
+          "Template literals and string interpolation",
+          "Destructuring arrays and objects",
+          "Spread and rest operators",
+          "Default parameters and enhanced object literals",
+          "Modules: import/export basics",
+          "Arrow functions and concise syntax",
+          "Intro to promises and async/await",
+        ],
+        project:
+          "Refactor an old JS project using ES6+ syntax and modular structure",
+      },
+      {
+        id: 11,
+        moduteTitle: "Asynchronous JavaScript & APIs",
+        topics: [
+          "Synchronous vs asynchronous programming",
+          "Understanding callbacks and callback hell",
+          "Promises — resolve, reject, chaining",
+          "async and await syntax",
+          "The Fetch API for making HTTP requests",
+          "Working with JSON data from APIs",
+          "Error handling in async functions",
+          "CORS and API key basics",
+        ],
+        project: "Build a weather app that fetches live data from an API",
+      },
+      {
+        id: 12,
+        moduteTitle: "Real-World JavaScript Projects",
+        topics: [
+          "Interactive Quiz App (with scoring system)",
+          "Expense Tracker (with localStorage)",
+          "Portfolio Interaction (animations and DOM)",
+          "Mini E-commerce Product Viewer (API + DOM)",
+          "Form Validation System (reusable logic)",
+        ],
+        //project:null,
+      },
+    ],
+  },
+
+  {
+    react: [
+      {
+        title: "Dominate React",
+        img: "/reactjs.png",
+      },
+      {
+        id: 1,
+        moduteTitle: "Introduction to React",
+        topics: [
+          "What is React and why it's popular",
+          "Single Page Applications (SPA) explained",
+          "How React differs from Vanilla JS",
+          "Setting up the development environment (Node.js, npm, Vite/Create React App)",
+          "Project folder structure explained",
+          "Understanding JSX syntax",
+          "Rendering elements dynamically",
+          "React's declarative UI philosophy",
+        ],
+        project:
+          "Set up your first React app and render a personalized greeting component",
+      },
+      {
+        id: 2,
+        moduteTitle: "Components & Props",
+        topics: [
+          "Understanding components (function vs class)",
+          "Creating and exporting components",
+          "Nesting components to build UI hierarchy",
+          "Props: passing data to components",
+          "Using props destructuring",
+          "Children prop and composition",
+          "Reusability and modular design with components",
+        ],
+        project:
+          "Build a reusable Card component and render multiple cards dynamically",
+      },
+      {
+        id: 3,
+        moduteTitle: "State & Event Handling",
+        topics: [
+          "What is state and why it's needed",
+          "Using useState() hook to manage state",
+          "Updating state and immutability rules",
+          "Event handling (onClick, onChange, onSubmit)",
+          "Passing event handlers as props",
+          "Controlled vs uncontrolled components",
+          "Two-way data binding in React",
+        ],
+        project:
+          "Create a Counter App with increment, decrement, and reset buttons",
+      },
+      {
+        id: 4,
+        moduteTitle: "Conditional Rendering & Lists",
+        topics: [
+          "Conditional rendering with if statements and ternaries",
+          "Short-circuit evaluation (&& and ||)",
+          "Rendering lists with map()",
+          "Assigning unique keys to list items",
+          "Conditional UI elements based on state",
+          "Empty state and loading indicators",
+          "Best practices for list rendering",
+        ],
+        project: "Build a dynamic Todo List app with add/remove functionality",
+      },
+      {
+        id: 5,
+        moduteTitle: "Working with Forms & User Input",
+        topics: [
+          "Creating forms in React",
+          "Controlled inputs using state",
+          "Handling multiple inputs with a single handler",
+          "Form validation basics",
+          "Submitting and resetting forms",
+          "Working with select, checkbox, and radio buttons",
+          "Preventing default browser behavior",
+        ],
+        project:
+          "Create a Contact Form component with validation and success message",
+      },
+      {
+        id: 6,
+        moduteTitle: "React Hooks Deep Dive",
+        topics: [
+          "Why hooks were introduced (functional vs class components)",
+          "useState and useEffect in action",
+          "useEffect dependencies and cleanup functions",
+          "useRef for DOM access and persisting values",
+          "useReducer for complex state logic",
+          "useContext for global state management",
+          "Rules of hooks and custom hooks",
+        ],
+        project:
+          "Build a theme switcher (light/dark mode) using useContext and useEffect",
+      },
+      {
+        id: 7,
+        moduteTitle: "Working with APIs (Data Fetching)",
+        topics: [
+          "Fetching data with fetch() and Axios",
+          "Handling async/await inside useEffect",
+          "Loading and error states",
+          "Displaying fetched data dynamically",
+          "Pagination and filtering basics",
+          "Managing side effects",
+          "Best practices for API integration",
+        ],
+        project:
+          "Build a User Directory app that fetches profiles from a public API",
+      },
+      {
+        id: 8,
+        moduteTitle: "React Router & Navigation",
+        topics: [
+          "Introduction to React Router",
+          "Setting up BrowserRouter, Routes, and Route components",
+          "Using Link and NavLink for navigation",
+          "Dynamic routing with URL parameters",
+          "Nested routes and layouts",
+          "useNavigate hook for programmatic navigation",
+          "404 pages and redirection",
+        ],
+        project:
+          "Create a multi-page portfolio site with Home, About, and Projects pages",
+      },
+      {
+        id: 9,
+        moduteTitle: "State Management & Context",
+        topics: [
+          "Prop drilling and its limitations",
+          "Introduction to Context API",
+          "Creating and providing context",
+          "Consuming context with useContext",
+          "Global state for theme or user data",
+          "Combining context with reducers",
+          "Alternative state management options (Redux, Zustand intro)",
+        ],
+        project:
+          "Build a global user authentication context (login/logout state)",
+      },
+      {
+        id: 10,
+        moduteTitle: "Performance Optimization",
+        topics: [
+          "Understanding React’s re-render process",
+          "useMemo and useCallback hooks",
+          "React.memo for component optimization",
+          "Lazy loading components",
+          "Code splitting and dynamic imports",
+          "Avoiding unnecessary state",
+          "Profiling with React DevTools",
+        ],
+        project:
+          "Optimize a large list rendering app using memoization and lazy loading",
+      },
+      {
+        id: 11,
+        moduteTitle: "Styling in React",
+        topics: [
+          "Inline styles and style objects",
+          "CSS modules and scoped styling",
+          "Styled-components introduction",
+          "TailwindCSS integration (setup + usage)",
+          "Conditional class names and dynamic styling",
+          "Theming with CSS variables or context",
+          "Best practices for responsive UI",
+        ],
+        project: "Create a styled dashboard layout using TailwindCSS",
+      },
+      {
+        id: 12,
+        moduteTitle: "Real-World React Projects",
+        topics: [
+          "Portfolio Website (multi-page routing)",
+          "Blog App with API-based content",
+          "E-commerce Product Page (Cart + Filters)",
+          "Weather App (API + context state)",
+          "Movie Search App (with pagination)",
+          "Authentication Dashboard (form + state)",
+        ],
+        //project:null,
+      },
+    ],
+  },
+
+  {
+    tailwind: [
+      {
+        title: "Dominate Tailwind",
+        img: "/tailwind.png",
+      },
+      {
+        id: 1,
+        moduteTitle: "Introduction to TailwindCSS",
+        topics: [
+          "What is TailwindCSS and why developers love it",
+          "Utility-first CSS philosophy",
+          "Installing Tailwind with CDN and npm",
+          "Setting up Tailwind in a React or Vite project",
+          "Understanding the tailwind.config.js file",
+          "How Tailwind processes classes and purges unused styles",
+          "Basic utility classes: margin, padding, text, colors",
+          "Inspecting generated CSS using browser dev tools",
+        ],
+        project:
+          "Set up Tailwind in a new project and create your first styled component",
+      },
+      {
+        id: 2,
+        moduteTitle: "Layout & Positioning Utilities",
+        topics: [
+          "Box model recap: spacing, borders, and sizing",
+          "Display utilities (block, inline, flex, grid)",
+          "Flexbox basics: justify, items, gap, wrap, direction",
+          "Grid layout with rows, columns, and gaps",
+          "Positioning: relative, absolute, fixed, sticky",
+          "Z-index, overflow, and visibility utilities",
+          "Aspect ratio and container utilities",
+        ],
+        project:
+          "Build a responsive landing page layout using flexbox and grid utilities",
+      },
+      {
+        id: 3,
+        moduteTitle: "Typography & Colors",
+        topics: [
+          "Font families, sizes, and weights",
+          "Line height, letter spacing, and text alignment",
+          "Text color and background color utilities",
+          "Using Tailwind color palettes and custom colors",
+          "Gradients, opacity, and shadow effects",
+          "Lists, blockquotes, and inline text utilities",
+          "Responsive typography",
+        ],
+        project:
+          "Design a beautiful blog post layout with typography utilities",
+      },
+      {
+        id: 4,
+        moduteTitle: "Responsive Design & Breakpoints",
+        topics: [
+          "Mobile-first design philosophy",
+          "Tailwind’s default breakpoints (sm, md, lg, xl, 2xl)",
+          "Responsive prefixes and nesting utilities",
+          "Hiding and showing elements at different breakpoints",
+          "Responsive flex/grid adjustments",
+          "Scaling typography and spacing for devices",
+          "Customizing breakpoints in config",
+        ],
+        project: "Create a fully responsive portfolio homepage",
+      },
+      {
+        id: 5,
+        moduteTitle: "Hover, Focus & State Variants",
+        topics: [
+          "Understanding pseudo-class variants in Tailwind",
+          "hover:, focus:, active:, visited:, group-hover:",
+          "Styling transitions and animations",
+          "Focus rings and accessibility considerations",
+          "Adding interactive hover effects to buttons and cards",
+          "Combining multiple state variants effectively",
+        ],
+        project: "Build an interactive button and card component library",
+      },
+      {
+        id: 6,
+        moduteTitle: "Customization & Theming",
+        topics: [
+          "Extending the Tailwind config for custom colors and fonts",
+          "Adding custom spacing, borders, and radius values",
+          "Using @layer to define base, components, and utilities",
+          "Working with CSS variables inside Tailwind",
+          "Theming (light/dark mode setup)",
+          "Creating reusable component styles with @apply",
+        ],
+        project:
+          "Create a themed style system with custom color palette and typography",
+      },
+      {
+        id: 7,
+        moduteTitle: "Advanced Components & Plugins",
+        topics: [
+          "Using Tailwind UI and community components",
+          "Integrating Headless UI for accessible interactions",
+          "Custom plugin creation and configuration",
+          "Forms, typography, and aspect-ratio plugins",
+          "Using container queries (Tailwind 3.3+)",
+          "Optimizing builds for production",
+        ],
+        project:
+          "Build a modern responsive dashboard with navigation and widgets",
+      },
+      {
+        id: 8,
+        moduteTitle: "Real-World Tailwind Projects",
+        topics: [
+          "Portfolio Website (Hero, About, Projects, Contact)",
+          "Product Landing Page (marketing layout)",
+          "Blog Page with dark mode toggle",
+          "Dashboard with sidebar navigation",
+          "Pricing Section and CTA Cards",
+        ],
+        //project:null,
+      },
+    ],
+  },
+
+  {
+    gsap: [
+      {
+        title: "Dominate GSAP",
+        img: "/gsap.png",
+      },
+      {
+        id: 1,
+        moduteTitle: "Introduction to GSAP",
+        topics: [
+          "What is GSAP and why use it for web animations",
+          "Installing GSAP via CDN or npm",
+          "The gsap.to(), gsap.from(), and gsap.fromTo() methods",
+          "Basic tween properties: duration, delay, repeat, yoyo",
+          "Ease types and easing functions (power1, expo, elastic)",
+          "Chaining animations and understanding timelines",
+          "Controlling animations with play, pause, reverse",
+        ],
+        project:
+          "Create an animated hero text reveal using gsap.from() and easing",
+      },
+      {
+        id: 2,
+        moduteTitle: "Timelines & Sequencing",
+        topics: [
+          "Creating timelines with gsap.timeline()",
+          "Using position parameters (start times, overlaps, labels)",
+          "Combining multiple animations into one flow",
+          "Reversing, pausing, and controlling timelines",
+          "Reusable timeline functions",
+          "Understanding stagger animations",
+        ],
+        project:
+          "Animate a landing page entrance sequence using GSAP timelines",
+      },
+      {
+        id: 3,
+        moduteTitle: "ScrollTrigger Mastery",
+        topics: [
+          "Installing and registering ScrollTrigger",
+          "Basic scroll-triggered animations",
+          "start and end markers explained",
+          "pinning sections and scrub animations",
+          "Using toggleActions effectively",
+          "Animating multiple sections on scroll",
+          "Responsive ScrollTrigger setups",
+        ],
+        project: "Create a scroll-based section reveal and pinning animation",
+      },
+      {
+        id: 4,
+        moduteTitle: "Advanced GSAP Features",
+        topics: [
+          "MotionPath plugin for path-based animation",
+          "ScrollSmoother and scroll velocity effects",
+          "SplitText for advanced typography animations",
+          "TextPlugin for typewriter effects",
+          "GSAP’s matchMedia() for responsive animations",
+          "Combining GSAP with CSS transitions or WebGL",
+        ],
+        project:
+          "Build a text intro animation using SplitText and ScrollSmoother",
+      },
+      {
+        id: 5,
+        moduteTitle: "React + GSAP Integration",
+        topics: [
+          "Setting up GSAP in React projects",
+          "Using useRef() and useLayoutEffect() for animation targeting",
+          "useGSAP() pattern and dependency handling",
+          "Animating on component mount and scroll",
+          "Reusing timelines and managing cleanup",
+          "Coordinating GSAP with React state changes",
+        ],
+        project:
+          "Animate React components on scroll using GSAP and ScrollTrigger",
+      },
+      {
+        id: 6,
+        moduteTitle: "Performance & Best Practices",
+        topics: [
+          "GPU acceleration and transform optimization",
+          "Reducing layout thrashing",
+          "Batch animations for performance",
+          "Using GSAP’s lagSmoothing and ticker",
+          "Preloading assets for smooth animations",
+          "Debugging with GSDevTools",
+        ],
+        project: "Optimize and polish animations for a real-world landing page",
+      },
+      {
+        id: 7,
+        moduteTitle: "Real-World GSAP Projects",
+        topics: [
+          "Portfolio Hero Animation (text + image entrance)",
+          "Scroll-triggered Product Showcase",
+          "Interactive Cursor Effects",
+          "Parallax Scrolling Landing Page",
+          "SVG Line Drawing and Logo Animation",
+        ],
+        //project:null,
+      },
+    ],
+  },
+];
+
+export default Modules
