@@ -22,7 +22,7 @@ const ModuleDetails = () => {
         <div className="p-24 text-white">
             <div className="flex items-center justify-center gap-2">
                 <img className="h-24 w-24" src={data[0].img} alt="" />
-                <h1 className="text-8xl poppins-bold mb-6">{data[0].title}</h1>
+                <h1 className="text-8xl font-bold mb-6">{data[0].title}</h1>
             </div>
             <div>
                 <h3 className="uppercase text-base poppins-regular-italic text-zinc-500">
