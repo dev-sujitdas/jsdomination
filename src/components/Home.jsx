@@ -47,7 +47,6 @@ const courses = [
 ]
 const Home = () => {
 
-
     return (
         <section className='min-h-screen w-full flex justify-center items-center p-20'>
             <div className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-700'>

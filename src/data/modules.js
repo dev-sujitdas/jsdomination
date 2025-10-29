@@ -1,3 +1,4 @@
+
 const Modules = [
   {
     html: [
@@ -9,7 +10,7 @@ const Modules = [
         id: 1,
         moduteTitle: "Getting Started with HTML",
         topics: [
-          "What is HTML & how it powers the web",
+          "What is HTML?",
           "Setting up your coding environment (VS Code + Live Server)",
           "HTML document structure",
           "Tags, elements & attributes",
@@ -866,3 +867,320 @@ const Modules = [
 ];
 
 export default Modules
+
+// const Modules = [
+//   {
+//     html: [
+//       {
+//         title: "Learn HTML Basics",
+//         img: "/html.png",
+//       },
+//       {
+//         id: 1,
+//         moduleTitle: "Getting Started with HTML",
+//         topics: [
+//           "What HTML is and why it's important",
+//           "Setting up VS Code and Live Server",
+//           "HTML page structure (head, body, tags)",
+//           "Adding text and simple content",
+//           "Comments and indentation",
+//         ],
+//         project: "Build your first 'Hello World' webpage",
+//       },
+//       {
+//         id: 2,
+//         moduleTitle: "Adding Text, Links & Images",
+//         topics: [
+//           "Headings and paragraphs",
+//           "Links and navigation",
+//           "Adding images with alt text",
+//           "Lists: ordered and unordered",
+//           "Embedding videos and iframes",
+//         ],
+//         project: "Create a simple Personal Bio Page",
+//       },
+//       {
+//         id: 3,
+//         moduleTitle: "Page Structure & Forms",
+//         topics: [
+//           "Understanding semantic tags (header, main, footer)",
+//           "Using divs for layout",
+//           "Building forms with inputs and buttons",
+//           "Labels, placeholders, and required fields",
+//         ],
+//         project: "Build a Contact Form",
+//       },
+//       {
+//         id: 4,
+//         moduleTitle: "Final HTML Practice",
+//         topics: [
+//           "Tables and data display",
+//           "Basic accessibility",
+//           "SEO-friendly tags",
+//         ],
+//         project: "Create a Basic Blog Page",
+//       },
+//     ],
+//   },
+
+//   {
+//     css: [
+//       {
+//         title: "Learn CSS Basics",
+//         img: "/css.png",
+//       },
+//       {
+//         id: 1,
+//         moduleTitle: "Getting Started with CSS",
+//         topics: [
+//           "What CSS does and how it styles HTML",
+//           "Inline, internal, and external CSS",
+//           "Basic selectors and syntax",
+//           "Colors, fonts, and backgrounds",
+//         ],
+//         project: "Style your 'Hello World' page with colors and fonts",
+//       },
+//       {
+//         id: 2,
+//         moduleTitle: "Layouts & Positioning",
+//         topics: [
+//           "Box model: margin, padding, border",
+//           "Positioning elements on the page",
+//           "Flexbox basics (aligning and centering)",
+//           "Intro to CSS Grid layouts",
+//         ],
+//         project: "Design a simple card layout using Flexbox",
+//       },
+//       {
+//         id: 3,
+//         moduleTitle: "Responsive Design",
+//         topics: [
+//           "What responsive design means",
+//           "Media queries and breakpoints",
+//           "Making text and images scale properly",
+//         ],
+//         project: "Build a responsive portfolio page",
+//       },
+//       {
+//         id: 4,
+//         moduleTitle: "Animations & Finishing Touches",
+//         topics: [
+//           "Hover and transition effects",
+//           "Adding shadows and rounded corners",
+//           "Simple keyframe animations",
+//         ],
+//         project: "Create an animated landing section",
+//       },
+//     ],
+//   },
+
+//   {
+//     javascript: [
+//       {
+//         title: "Learn JavaScript Basics",
+//         img: "/javascript.png",
+//       },
+//       {
+//         id: 1,
+//         moduleTitle: "Introduction to JavaScript",
+//         topics: [
+//           "What JavaScript does in web pages",
+//           "Adding JS to HTML",
+//           "Using the console and debugging",
+//           "Writing clean and readable code",
+//         ],
+//         project: "Display a greeting message dynamically",
+//       },
+//       {
+//         id: 2,
+//         moduleTitle: "Working with Data",
+//         topics: [
+//           "Variables and data types",
+//           "Numbers, strings, and booleans",
+//           "Basic math and string operations",
+//         ],
+//         project: "Create a simple calculator script",
+//       },
+//       {
+//         id: 3,
+//         moduleTitle: "Logic and Loops",
+//         topics: [
+//           "If/else conditions",
+//           "For and while loops",
+//           "Ternary operator (short condition)",
+//         ],
+//         project: "Make a grade calculator",
+//       },
+//       {
+//         id: 4,
+//         moduleTitle: "Functions & Events",
+//         topics: [
+//           "Creating and using functions",
+//           "Handling button clicks and input events",
+//           "Using return values",
+//         ],
+//         project: "Build a Counter App with buttons",
+//       },
+//       {
+//         id: 5,
+//         moduleTitle: "DOM Manipulation",
+//         topics: [
+//           "Selecting HTML elements with JS",
+//           "Changing content dynamically",
+//           "Creating and removing elements",
+//         ],
+//         project: "Build an interactive To-Do List",
+//       },
+//       {
+//         id: 6,
+//         moduleTitle: "Fetching & APIs",
+//         topics: [
+//           "What APIs are and how to fetch data",
+//           "Working with JSON data",
+//           "Showing loading and error messages",
+//         ],
+//         project: "Create a Weather App using an API",
+//       },
+//     ],
+//   },
+
+//   {
+//     react: [
+//       {
+//         title: "Learn React Fundamentals",
+//         img: "/reactjs.png",
+//       },
+//       {
+//         id: 1,
+//         moduleTitle: "Introduction to React",
+//         topics: [
+//           "What React is and how it works",
+//           "Setting up a React app",
+//           "JSX syntax and rendering elements",
+//         ],
+//         project: "Create your first React component",
+//       },
+//       {
+//         id: 2,
+//         moduleTitle: "Components & Props",
+//         topics: [
+//           "Reusable components explained",
+//           "Passing data with props",
+//           "Nesting components together",
+//         ],
+//         project: "Build a reusable Card component",
+//       },
+//       {
+//         id: 3,
+//         moduleTitle: "State & Events",
+//         topics: [
+//           "What state is and how to use it",
+//           "useState hook basics",
+//           "Handling button clicks and form inputs",
+//         ],
+//         project: "Build a Counter App",
+//       },
+//       {
+//         id: 4,
+//         moduleTitle: "Working with APIs & Lists",
+//         topics: [
+//           "Fetching data in React using useEffect",
+//           "Displaying lists with map()",
+//           "Handling loading states",
+//         ],
+//         project: "Create a User List from an API",
+//       },
+//       {
+//         id: 5,
+//         moduleTitle: "Navigation & Styling",
+//         topics: [
+//           "Using React Router for multiple pages",
+//           "Styling with Tailwind or CSS Modules",
+//         ],
+//         project: "Create a Multi-Page Portfolio Website",
+//       },
+//     ],
+//   },
+
+//   {
+//     tailwind: [
+//       {
+//         title: "Learn Tailwind CSS",
+//         img: "/tailwind.png",
+//       },
+//       {
+//         id: 1,
+//         moduleTitle: "Getting Started with Tailwind",
+//         topics: [
+//           "Installing Tailwind in React",
+//           "Understanding utility classes",
+//           "Spacing, colors, and text utilities",
+//         ],
+//         project: "Style a basic homepage using Tailwind",
+//       },
+//       {
+//         id: 2,
+//         moduleTitle: "Layouts & Responsiveness",
+//         topics: [
+//           "Flexbox and Grid utilities",
+//           "Responsive design with breakpoints",
+//           "Hiding and showing content on screen sizes",
+//         ],
+//         project: "Build a responsive layout using Tailwind Grid",
+//       },
+//       {
+//         id: 3,
+//         moduleTitle: "Hover, Focus & Theming",
+//         topics: [
+//           "Adding hover and focus effects",
+//           "Dark mode and custom colors",
+//           "Reusable styles with @apply",
+//         ],
+//         project: "Create a dark/light mode portfolio section",
+//       },
+//     ],
+//   },
+
+//   {
+//     gsap: [
+//       {
+//         title: "Learn GSAP Animations",
+//         img: "/gsap.png",
+//       },
+//       {
+//         id: 1,
+//         moduleTitle: "Introduction to GSAP",
+//         topics: [
+//           "What GSAP is and how to use it",
+//           "Basic animations (move, fade, scale)",
+//           "Easing and duration settings",
+//         ],
+//         project: "Animate a Hero Text Reveal",
+//       },
+//       {
+//         id: 2,
+//         moduleTitle: "Scroll & Timeline Animations",
+//         topics: [
+//           "Creating smooth scroll effects",
+//           "Sequencing multiple animations",
+//           "Pinning and triggering sections on scroll",
+//         ],
+//         project: "Build a Scroll-Triggered Animation Section",
+//       },
+//       {
+//         id: 3,
+//         moduleTitle: "React + GSAP Integration",
+//         topics: [
+//           "Using GSAP in React with useRef",
+//           "Animating components on mount",
+//           "ScrollTrigger setup for React projects",
+//         ],
+//         project: "Add GSAP animations to your React Portfolio",
+//       },
+//     ],
+//   },
+// ];
+
+// export default Modules;
+
+

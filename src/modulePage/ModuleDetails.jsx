@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Modules from "../data/modules"; // ✅ default import
+import Modules from "../data/modules"; 
+
 
 const ModuleDetails = () => {
     const { name } = useParams();
     const navigate = useNavigate();
-
-    // Find the module object whose key matches the param
+    
     const moduleObj = Modules.find((m) => m[name]);
     const data = moduleObj ? moduleObj[name] : null;
 
